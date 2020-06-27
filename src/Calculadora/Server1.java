@@ -21,7 +21,7 @@ public class Server1 implements Arimeticas{
         return a+b;
     }
     
-    public int resta(int a, int b){
+    public int resta(int a, int b)throws RemoteException{
         return a-b;
     }
     
@@ -29,7 +29,12 @@ public class Server1 implements Arimeticas{
         Mensajes msj = new Mensajes("nada",1);
         return msj;
     }
-    
+    public int division(int a, int b)throws RemoteException{
+        return a/b;
+    }
+    public int multiplicacion(int a, int b)throws RemoteException{
+        return a*b;
+    }
 //    public static void main(String args[]){
 //        try{
 //            java.rmi.registry.LocateRegistry.createRegistry(1099);//Puerto default del rmiregistry

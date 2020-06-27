@@ -14,5 +14,7 @@ import java.rmi.RemoteException;
  */
 public interface Trigonometricas extends Remote  {
     //Pones las operaciones que vas a usar en la interfaz y 
-    public int seno(int x, int y)throws RemoteException;
+    public double seno(double x)throws RemoteException;
+    public double coseno(double x)throws RemoteException;
+    public double tangente(double x)throws RemoteException;
 }

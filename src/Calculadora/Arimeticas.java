@@ -15,5 +15,7 @@ import java.rmi.RemoteException;
 public interface Arimeticas extends Remote{
     int suma(int a,int b) throws RemoteException;
     int resta(int a, int b) throws RemoteException;
+    int division(int a, int b) throws RemoteException;
+    int multiplicacion(int a, int b) throws RemoteException;
     Mensajes obtenerMensaje() throws RemoteException;
 }

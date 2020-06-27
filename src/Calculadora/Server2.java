@@ -10,15 +10,21 @@ import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
 
-/**
- *
- * @author Ralph
- */
+
 public class Server2 implements Trigonometricas{
     public Server2(){}
     //Insertas las opraciones Trigonometricas
-    public int seno(int x, int y){
-        return x/y;//agregar bien la función seno
+    public double seno(double x){
+        double y=Math.toRadians(x);
+        return Math.sin(y);
+    }
+    public double coseno(double x){
+        double y=Math.toRadians(x);
+        return Math.cos(y);
+    }
+    public double tangente(double x){
+        double y=Math.toRadians(x);
+        return Math.tan(y);
     }
     
     
